@@ -19,3 +19,6 @@ Simply drop `simple_ini_reader.h` into your source folder and add the following 
 This software is dual-licensed to the public domain and under the following
 license: you are granted a perpetual, irrevocable license to copy, modify,
 publish, and distribute this file as you see fit.
+
+## Contact
+You can send feedback to [contact@sebj.co.uk](mailto:contact@sebj.co.uk)
