@@ -22,3 +22,10 @@ is printed for the INI's global section.
 The `--list-keys` option prints each key name (as opposed to the key values
 printed by `-k`). Note that this may be combined with the `-s` option to get
 the key names from a specific section.
+
+## Compilation
+Simply compile `sir_util.c` with a C compiler. For example:
+
+```
+gcc -o sir sir_util.c
+```
