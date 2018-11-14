@@ -1154,14 +1154,14 @@ SIRDEF SirIni sir_load_from_file(const char *filename,
 
     if (!file) 
     {
-        sir__set_error(ini, "fopen failed", 0, 0);
+        sir__set_error(ini, strerror(errno), 0, 0);
         return ini;
     }
 
-    if (fseek(file, 0, SEEK_END))
+    if (fseek(file, 0, SEEK_END) == -1)
     {
         fclose(file);
-        sir__set_error(ini, "fseek failed", 0, 0);
+        sir__set_error(ini, strerror(errno), 0, 0);
         return ini;
     }
 
@@ -1169,7 +1169,7 @@ SIRDEF SirIni sir_load_from_file(const char *filename,
     if (size == -1L)
     {
         fclose(file);
-        sir__set_error(ini, "ftell failed", 0, 0);
+        sir__set_error(ini, strerror(errno), 0, 0);
         return ini;
     }
 
@@ -1188,7 +1188,7 @@ SIRDEF SirIni sir_load_from_file(const char *filename,
     {
         SIR_FREE(mem_ctx, data);
         fclose(file);
-        sir__set_error(ini, "fread failed", 0, 0);
+        sir__set_error(ini, strerror(errno), 0, 0);
         return ini;
     }
 
@@ -1200,7 +1200,7 @@ SIRDEF SirIni sir_load_from_file(const char *filename,
         if (!data)
         {
             fclose(file);
-            sir__set_error(ini, "SIR_REALLOC failed", 0, 0);
+            sir__set_error(ini, strerror(errno), 0, 0);
             return ini;
         }
     }
