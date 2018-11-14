@@ -79,7 +79,7 @@
 //
 // Load an INI file and get values from keys, e.g:
 //
-//      SirIni ini = sir_load("foo.ini", options);
+//      SirIni ini = sir_load_from_file("foo.ini", options, 0);
 //
 //      const char *str = sir_str(ini, "key_name");
 //
@@ -156,7 +156,7 @@ typedef enum SirOptions
     // Only '=' will be used to seperate key names and values
     SIR_OPTION_DISABLE_COLON_ASSIGNMENT = 0x010,
 
-    // A line will only be a comment a '\n' is directly before the comment
+    // A line will only be a comment if '\n' is directly before the comment
     SIR_OPTION_DISABLE_COMMENT_ANYWHERE = 0x020,
 
     // Both section names and key names and values will be case-insensitive
