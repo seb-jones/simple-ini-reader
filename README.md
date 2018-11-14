@@ -23,7 +23,7 @@ Simply drop `simple_ini_reader.h` into your source folder and add the following 
 
 ### Utility
 
-The source code for the command-line utility is located in `utils`. See the README file in that folder for more infomation.
+The source code for the command-line utility is located in `util`. See the README file in that folder for more infomation.
 
 ## License
 This software is dual-licensed to the public domain and under the following
