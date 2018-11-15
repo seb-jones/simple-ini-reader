@@ -8,7 +8,7 @@ scripts.
 * Public domain, so no attribution is required.
 * Written using only the C Standard Library, so it should be portable (tested on Windows and Ubuntu).
 * Fast and has a small memory footprint, especially if custom allocators are used and warnings and errors are disabled.
-* It provides a very simple, user-friendly interface.
+* Provides a very simple, user-friendly interface.
 
 ## Basic Usage
 
@@ -19,11 +19,11 @@ Simply drop `simple_ini_reader.h` into your source folder and add the following 
 #define SIMPLE_INI_READER_IMPLEMENTATION
 #include "simple_ini_reader.h"
 ```
-`simple_ini_reader.h` has basic documentation commented at the top of the file. For more detailed examples check the `samples` folder.
+`simple_ini_reader.h` has basic documentation commented at the top of the file. For more detailed examples check the [samples](samples/) folder.
 
 ### Utility
 
-The source code for the command-line utility is located in `util`. See the README file in that folder for more infomation.
+The source code for the command-line utility is located in [util](util/). See the README file in that folder for more infomation.
 
 ## License
 This software is dual-licensed to the public domain and under the following
