@@ -1,3 +1,8 @@
+// Public-domain Unix-style program that provides a user-interface to 
+// the Simple INI Reader library, written using only the C Standard Library.
+//
+// Author: Sebastian Jones (http://www.sebj.co.uk)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
