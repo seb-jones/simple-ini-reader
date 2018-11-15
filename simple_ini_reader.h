@@ -1,5 +1,5 @@
 // Public Domain, single-file INI reader using only the C Standard Library.
-// Author: Sebastian Jones
+// Author: Sebastian Jones (http://www.sebj.co.uk)
 //
 // Features
 // ========
