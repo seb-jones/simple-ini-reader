@@ -25,10 +25,5 @@ Simply drop `simple_ini_reader.h` into your source folder and add the following 
 
 The source code for the command-line utility is located in [util](util/). See the README file in that folder for more infomation.
 
-## License
-This software is dual-licensed to the public domain and under the following
-license: you are granted a perpetual, irrevocable license to copy, modify,
-publish, and distribute this file as you see fit.
-
 ## Contact
 You can send feedback to [contact@sebj.co.uk](mailto:contact@sebj.co.uk)
